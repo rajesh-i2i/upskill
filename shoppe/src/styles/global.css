@@ -1,0 +1,63 @@
+/* ── Reset & Base ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: #f7f5f0;
+  color: #2c2a26;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+}
+
+select {
+  font-family: inherit;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4cfc6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5ae9f;
+}
+
+/* ── Focus visible ────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #8b7355;
+  outline-offset: 2px;
+}
+
+/* ── Transitions ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
